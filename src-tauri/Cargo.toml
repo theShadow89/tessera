@@ -1,0 +1,16 @@
+[package]
+name = "tessera"
+version = "0.1.0"
+description = "Split 3D models into printable parts joined with connectors."
+edition = "2021"
+
+[lib]
+name = "tessera_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-http = "2"
